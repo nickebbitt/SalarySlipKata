@@ -41,7 +41,7 @@ public class SalarySlipGeneratorShould {
 
         assertEquals(12345, salarySlip.employeeID());
         assertEquals("John Doe", salarySlip.employeeName());
-        assertEquals(2_000, salarySlip.grossSalary());
+        assertEquals(2_000, salarySlip.grossMonthlySalary());
 
     }
 

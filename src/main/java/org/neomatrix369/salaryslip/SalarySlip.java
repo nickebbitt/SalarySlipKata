@@ -3,11 +3,13 @@ package org.neomatrix369.salaryslip;
 public class SalarySlip {
     private final int employeeID;
     private final String employeeName;
+    private final int grossMonthlySalary;
 
-    public SalarySlip(int employeeID, String employeeName) {
+    public SalarySlip(int employeeID, String employeeName, int grossMonthlySalary) {
 
         this.employeeID = employeeID;
         this.employeeName = employeeName;
+        this.grossMonthlySalary = grossMonthlySalary;
     }
 
     int employeeID() {
@@ -18,7 +20,7 @@ public class SalarySlip {
         return employeeName;
     }
 
-    public int grossSalary() {
-        return 0;
+    public int grossMonthlySalary() {
+        return grossMonthlySalary;
     }
 }
